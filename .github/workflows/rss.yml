@@ -1,0 +1,7 @@
+steps:
+  - uses: actions/checkout@v2
+  - uses: sarisia/actions-readme-feed@v1.7.0
+    with:
+      url: 'https://trap.jp/author/d_etteiu8383/rss/'
+      file: 'README.md'
+  - uses: sarisia/actions-commit@master
