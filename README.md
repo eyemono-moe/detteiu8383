@@ -1,16 +1,18 @@
-## 名前 :name_badge:
+## d_etteiu8383 (でっていう)
 
-@d_etteiu8383
-でっていう
-
-## できること :muscle:
+### :muscle:
 
 - 3DCG
   - Blender
 - Python
 - JavaScript(TypeScript)
- 
-## ブログ記事 :pencil2:
+
+### :memo:
 
 <!-- feed start -->
 <!-- feed end -->
+
+### :link:
+
+- [Blog(東京工業大学デジタル創作同好会traP)](https://trap.jp/author/d_etteiu8383/)
+- [Twitter](https://twitter.com/d_etteiu8383)
