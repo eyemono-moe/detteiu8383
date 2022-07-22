@@ -1,7 +1,16 @@
-steps:
-  - uses: actions/checkout@v2
-  - uses: sarisia/actions-readme-feed@v1.7.0
-    with:
-      url: 'https://trap.jp/author/d_etteiu8383/rss/'
-      file: 'README.md'
-  - uses: sarisia/actions-commit@master
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: sarisia/actions-readme-feed@v1.7.0
+        id: feed
+        with:
+          url: "https://trap.jp/author/d_etteiu8383/rss/"
+          file: "README.md"
+      - if: ${{ steps.feed.outputs.changed == true }}
+        uses: sarisia/actions-commit@master
